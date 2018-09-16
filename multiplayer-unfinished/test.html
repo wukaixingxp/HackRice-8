@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+Hello World
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script>
+    var socket = io();
+
+
+    var VoiceOn = function(){
+        socket.emit('VoiceInput',{
+            input:true
+        });
+    }
+    var VoiceOff = function(){
+        socket.emit('VoiceInput',{
+            input:false
+        });
+    }
+
+    socket.on('Move',function(data){
+        if (data.move == 'up'){
+            console.log('go up')
+        }
+        if (data.move == 'right'){
+            console.log('go right')
+        }
+        if (data.move == 'left'){
+            console.log('go left')
+        }
+
+    });
+
+</script>
+
+<button onclick="VoiceOn()">VoiceOn Now</button>
+<button onclick="VoiceOff()">VoiceOff Now</button>
+</body>
+</html>

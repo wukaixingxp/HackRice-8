@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="\css\all.css">
+
+	<script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>DoodleJump</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+  <script src="wad-master/wad-master/build/wad.min.js"></script>	<script src="libraries/p5.sound.js"></script>
+	<script src="lib/doodleJump.js"></script>
+	<script src="lib/doodler.js"></script>
+	<script src="lib/platform.js"></script>
+    <script src="lib/socket.io-1.4.5.js"></script>
+<!-- 	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-121345293-1');
+	</script> -->
+	<script>
+		console.log("process 0")
+	window.onload = function() {
+        pass(FBInstant,io);
+		console.log("process 50")
+      	FBInstant.initializeAsync().then(function() {
+        FBInstant.setLoadingProgress(100);
+        console.log("process 100")
+        FBInstant.startGameAsync().then(function() {
+          document.getElementById('textContextId').innerHTML = FBInstant.context.getID();
+              var contextId = FBInstant.context.getID();
+    		var contextType = FBInstant.context.getType();
+    		var playerName = FBInstant.player.getName();
+    		var playerPic = FBInstant.player.getPhoto();
+    		var playerId = FBInstant.player.getID();
+          FBInstant.player.getConnectedPlayersAsync().then(function (players) {
+            document.getElementById('textConnectedPlayers').innerHTML =
+              JSON.stringify(players);
+          });
+        });
+      });
+    };
+	</script>
+</head>
+</html>

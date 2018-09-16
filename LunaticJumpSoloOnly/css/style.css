@@ -1,0 +1,95 @@
+
+body {
+align-items: center;
+overflow: hidden;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+max-width: 100%;
+
+margin: 0 150px;
+}
+
+.main-body{
+max-width: 100%;
+margin: 0 150px;
+}
+
+canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  position: absolute;
+  left: calc(50% - 200px);
+  width: 800px;
+}
+
+.title{
+  text-align: center;
+  color:white;
+}
+
+footer{
+  background:lightskyblue;
+}
+
+.button{
+  position: absolute;
+  top: 500px;
+  left: calc(50% - 100px);
+  margin: auto;
+  background: transparent;
+  color: lightskyblue; ;
+  border-radius: 6px;
+  border: 2px solid lightskyblue;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.instructions{
+  position: absolute;
+  top:75px;
+  text-align: center;
+  width: 800px;
+  /* background:rgb(214,212,93); */
+  color: white;
+  border-radius: 5%;
+  padding:20px;
+}
+
+.links{
+  position: absolute;
+  left: 80%;
+  top:200px;
+
+
+}
+
+.links a{
+  font-family: fantasy;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  list-style: none;
+  color:rgb(214,212,93);
+}
+
+.image-doodle{
+  position: absolute;
+  top:200px;
+  left: 70%;
+}
+
+.colsiz{
+  color: black;
+  font-size: 35px;
+}
+
