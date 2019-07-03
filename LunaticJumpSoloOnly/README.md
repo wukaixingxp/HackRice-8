@@ -1,11 +1,11 @@
-# Doodle Jump
+#Lunatic Jump
 
 ## Game Overview and Logic
-Doodle Jump is a clone of the classic game, in which the character attempts hops up to earn points for each hop . He will be interrupted by enemies and collision with the enemies or falling down will result in losing the game .
+Lunatic Jump is a clone of the classic game Doodle Jump, in which the character attempts hops up to earn points for each hop . He will be interrupted by enemies and collision with the enemies or falling down will result in losing the game .
 ![login page](https://raw.githubusercontent.com/Meenakshi-Anand/DoodleJump/master/images/game-screenshot.png)
 
 ## Functionality & MVP
-In Doodle Jump users will be able to
+In Lunatic Jump users will be able to
 - [ ] There will be a control modal describing the rules.
 - [ ] Randomly seed initial data(bases) for play.
 - [ ] User will be able to hop up on bases in left and right.
@@ -13,7 +13,7 @@ In Doodle Jump users will be able to
 - [ ] Score will be visible while on play .
 
 ## Wireframes
-Doodle Jump will be a single-window game. The user will be able to move up ,left and right with the keyboard's arrows.
+Lunatic Jump will be a single-window game. The user will be able to move up ,left and right with the keyboard's arrows.
 
 ![Design Documentation](https://raw.githubusercontent.com/Meenakshi-Anand/DoodleJump/master/wireframe/Doodle_jump_wireframe..jpg)
 
